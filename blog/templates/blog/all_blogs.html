@@ -1,0 +1,10 @@
+<h1>Guy's Blog</h1>
+
+{% for blog in blogs %}
+
+<h2>{{ blog.title }}</h2>
+<H5>{{ blog.date}}</h5>
+<p>{{ blog.description|safe }}</p>
+
+
+{% endfor %}
